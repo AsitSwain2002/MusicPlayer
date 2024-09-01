@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Muic Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="musicBox">
+            <div class="menuSection">
+                <div class="back">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="menu">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <div class="musicImage">
+                <div class="img">
+                    <img src="media/photo-1724513786070-e1d446f94f03.avif" alt="">
+                </div>
+            </div>
+            <div class="musicDetails">
+                <div class="title">Despacito</div>
+                <div class="details">Luis Fonsi ft. Puerto Rican</div>
+            </div>
+            <div class="songLine">
+                <audio controls id="song">
+                    <source
+                        src="media/_Kabira Full Song_ Yeh Jawaani Hai Deewani _ Pritam _ Ranbir Kapoor_ Deepika Padukone(MP3_160K).mp3"
+                        type="audio/mpeg">
+                </audio>
+                <input type="range" value="0" id="range">
+            </div>
+            <div class="musicController" id="backward">
+                <div class="box1">
+                    <i class="ri-rewind-mini-fill"></i>
+                </div>
+                <div class="box2" id="play">
+                    <i class=" ri-play-large-fill ri-pause-fill" id="play1"></i>
+                </div>
+                <div class="box3" id="forward">
+                    <i class="ri-speed-mini-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
