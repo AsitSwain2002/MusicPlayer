@@ -11,10 +11,9 @@ song.onloadmetadata = () => {
     range.max = song.duration;
     range.value = song.currentTime;
 }
-song.onload = ()=>{
-    song.pause();
-}
-console.log(song.duration);
+// song.onload = ()=>{
+//     song.pause();
+// }
 musicSelect.addEventListener("click", () => {
     if (count == 0) {
         song.play();
@@ -30,7 +29,7 @@ musicSelect.addEventListener("click", () => {
 
 })
 
-if (song.play()) {
+if(song.play()) {
     setInterval(() => {
         range.value = song.currentTime;
     }, 500)
